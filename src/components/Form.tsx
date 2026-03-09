@@ -4,11 +4,11 @@ interface FormProps {
   title?: string;
   onSubmit?: (e: React.FormEvent<HTMLFormElement>) => void;
   children?: React.ReactNode;
-  FormName?: string;
+ 
   className?:string;
 }
 
-const Form: React.FC<FormProps> = ({ title, onSubmit, children, FormName, className }) => {
+const Form: React.FC<FormProps> = ({ title, onSubmit, children, className }) => {
 
     const basestyles = "bg-white p-6 rounded-lg space-y-4";
   return (
